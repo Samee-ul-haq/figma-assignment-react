@@ -11,7 +11,9 @@ const AboutWidget = () => {
 
       {/* Top bar: Icon + Tabs */}
       <div className="flex justify-between items-center">
-        <HiOutlineQuestionMarkCircle className="text-2xl text-gray-400" />
+        <button onClick={() => alert('This widget displays information about the sales representative.')}>
+    <HiOutlineQuestionMarkCircle className="text-2xl text-gray-400" />
+  </button>
         <div className="flex items-center gap-2 p-1 bg-[#292929] rounded-full">
           <button
             onClick={() => setActiveTab('About Me')}
